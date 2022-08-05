@@ -5,7 +5,7 @@ You need to download the following:
  - Node.js (https://nodejs.org/en/download/current/) and select Windows Installer (.msi)
  - Fiddler Classic (https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe)
 
-Download node.js then go in the folder with the ```script.js``` and in the Windows Explorer bar type in ```cmd``` and type ```node``` and drag the script in the CMD window. Minimize the window after this.
+Download node.js then go in the folder with the ```script.js``` and in the Windows Explorer bar type in ```cmd``` and type ```node``` and drag the script in the CMD window and press enter to run it. Minimize the window after this.
 
 After you've done that go to Fiddler Classic link and install it then run it then go to the right of the screen and press on FiddlerScript and paste this script this:
 
