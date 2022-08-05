@@ -7,7 +7,7 @@ http.createServer((req, res) => {
     switch (path) {
         case '/prod/client/notice/config/com.kurogame.aki.internal/0.1.0/LoginNotice.json':
             res.writeHead(200, { 'Content-Type': 'text/plain' });
-            res.end('{"Id":"62bea858a0d107f59266efb2","ModifyTime":1657253232278,"BeginTime":1656900000,"EndTime":1672502100,"Title":"CrepeWW","content":"poger poger poger poger"}');
+            res.end('{"Id":"62bea858a0d107f59266efb2","ModifyTime":1657253232278,"BeginTime":1656900000,"EndTime":1672502100,"Title":"CWWepe","content":"Testing out the "Private Server""}');
             break;
         case '/client/0.1.0/Windows/config.json':
             res.writeHead(200, { 'Content-Type': 'application/json' });
