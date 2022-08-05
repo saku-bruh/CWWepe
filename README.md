@@ -10,26 +10,18 @@ Download node.js then go in the folder with the ```script.js``` and in the Windo
 After you've done that go to Fiddler Classic link and install it then run it then go to the right of the screen and press on FiddlerScript and paste this script this:
 
 ```bash
-import System;
 import System.Windows.Forms;
 import Fiddler;
 import System.Text.RegularExpressions;
-var list = [
-    "kurogame.com", //1
-    ];
 
 class Handlers
 {
     static function OnBeforeRequest(oS: Session) {
-        var active = true;
-        
-        if(active) {
-            for(var i = 0; i < 33; i++) {
-                if(oS.uriContains(list[i])) {
-                    oS.host = "localhost"; // This can also be replaced with another IP address.
-                    break;
-                }
-            }
+        if (oS.host.Equals("overseauspider.yuanshen.com:8888")) {
+            oS.oRequest.FailSession(404, "Not Found", "Not Found");
+        }
+        else if(oS.host.EndsWith(".yuanshen.com") || oS.host.EndsWith(".starrails.com") || oS.host.EndsWith(".hoyoverse.com") || oS.host.EndsWith(".mihoyo.com") || oS.host.EndsWith(".kurogame.com")) {
+            oS.host = "localhost";
         }
     }
 };
