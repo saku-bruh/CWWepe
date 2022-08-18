@@ -1,5 +1,5 @@
 # CWWepe
-Basic HTTP script for Wuthering Waves
+Basic HTTP server script for Wuthering Waves
 
 You need to download the following:
  - Node.js (https://nodejs.org/en/download/current/) and select Windows Installer (.msi)
